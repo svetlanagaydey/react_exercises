@@ -7,6 +7,7 @@ import AppData from './Components/DataMassaging_13.1/AppData.jsx';
 import Avatar from './Components/Avatar_13.2/Avatar.jsx';
 import Text from './Components/Text_hide-show_18.1/Text';
 import Todo from './Components/Simple_todo_18.2/Todo';
+import Time from './Components/Time_convert_18.3/Time';
 
 
 ReactDOM.render(
@@ -15,8 +16,9 @@ ReactDOM.render(
      <Focus />
      <Copy /> <AppData />
      <Avatar />
-     <Text /> */}
-     <Todo />
+     <Text />
+     <Todo /> */}
+     <Time />
 
   </React.StrictMode>,
   document.getElementById('root')

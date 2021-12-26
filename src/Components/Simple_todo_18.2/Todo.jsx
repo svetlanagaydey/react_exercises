@@ -10,7 +10,6 @@ const todoArray = [
 ]
     const Todo = () => {
         const [arr, setArr] = useState(todoArray);
-        console.log(arr[0].name)
         const printList = (arr) => {
             return arr.map((todoItem, index) => {
                 return (
@@ -23,10 +22,8 @@ const todoArray = [
         }
 
         const changeStatus = (currentIndex) => {
-            console.log(currentIndex);
             const tempArray = [...arr];
             tempArray[currentIndex].completed ===true ? tempArray[currentIndex].completed=false : tempArray[currentIndex].completed=true;
-            console.log(tempArray);
             setArr(tempArray);
         }
 
