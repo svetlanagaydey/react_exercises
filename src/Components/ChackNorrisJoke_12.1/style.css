@@ -1,0 +1,12 @@
+button {
+    width: 200px;
+    height: 90px;
+    margin-top: 30px;
+    font-size: 30px;
+}
+.addCategory {
+    width: 100px;
+    height: 40px;
+    background: plum;
+    margin-top: 10px;
+}
