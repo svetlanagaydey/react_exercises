@@ -8,6 +8,7 @@ import Avatar from './Components/Avatar_13.2/Avatar.jsx';
 import Text from './Components/Text_hide-show_18.1/Text';
 import Todo from './Components/Simple_todo_18.2/Todo';
 import Time from './Components/Time_convert_18.3/Time';
+import Checkboxes from './Components/Controlled_checkboxes/Checkboxes';
 
 
 ReactDOM.render(
@@ -17,8 +18,9 @@ ReactDOM.render(
      <Copy /> <AppData />
      <Avatar />
      <Text />
-     <Todo /> */}
-     <Time />
+     <Todo />
+     <Time /> */}
+     <Checkboxes />
 
   </React.StrictMode>,
   document.getElementById('root')
