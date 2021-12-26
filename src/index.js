@@ -6,6 +6,7 @@ import Copy from './Components/Copy_14.2/Copy.jsx'
 import AppData from './Components/DataMassaging_13.1/AppData.jsx';
 import Avatar from './Components/Avatar_13.2/Avatar.jsx';
 import Text from './Components/Text_hide-show_18.1/Text';
+import Todo from './Components/Simple_todo_18.2/Todo';
 
 
 ReactDOM.render(
@@ -13,8 +14,10 @@ ReactDOM.render(
      {/* <ChackNorrisJoke />
      <Focus />
      <Copy /> <AppData />
-     <Avatar /> */}
-     <Text />
+     <Avatar />
+     <Text /> */}
+     <Todo />
+
   </React.StrictMode>,
   document.getElementById('root')
 );

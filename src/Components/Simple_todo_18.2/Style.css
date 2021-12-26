@@ -1,0 +1,23 @@
+.icon-true,
+.icon-false {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.icon-true {
+    background-color: green;
+}
+.icon-false {
+    background-color: brown;
+}
+.text-true,
+.text-false {
+    display: inline-block;
+    font-size: 40px;
+}
+.text-true {
+
+}
+.text-false {
+    text-decoration: line-through;
+}
