@@ -10,6 +10,7 @@ import Todo from './Components/Simple_todo_18.2/Todo';
 import Time from './Components/Time_convert_18.3/Time';
 import Checkboxes from './Components/Controlled_checkboxes/Checkboxes';
 import SimpleFetch from './Components/Simple_fetch_hooks_19.1/SimpleFetch';
+import Countries from './Components/Countries_hook_api_19.2/Countries';
 
 
 ReactDOM.render(
@@ -21,8 +22,9 @@ ReactDOM.render(
      <Text />
      <Todo />
      <Time />
-     <Checkboxes /> */}
-     <SimpleFetch />
+     <Checkboxes />
+     <SimpleFetch /> */}
+     <Countries />
 
   </React.StrictMode>,
   document.getElementById('root')
