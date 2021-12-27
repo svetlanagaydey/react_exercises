@@ -3,9 +3,10 @@ import React, { useState } from 'react';
 const Checkboxes = () => {
 	const defaultArray = ["one", "two", "three", "four", "five"];
 	const defaultList = defaultArray.map((element) => {
-		return {	name: element,
-							isChecked: false,
-						}
+		return {
+			name: element,
+			isChecked: false,
+		}
 	})
 	const [chekboxes, setChekboxes] = useState(defaultList);
 
@@ -33,6 +34,7 @@ const Checkboxes = () => {
 		})
 		setChekboxes(tempDelete);
 	}
+
 	const resetAll = () => {
 		setChekboxes(defaultList);
 	}

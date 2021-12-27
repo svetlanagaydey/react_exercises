@@ -26,13 +26,13 @@ const Time = () => {
         <legend>Wat's the time?</legend>
         <label htmlFor="">Seconds: </label>
         <input label="Seconds" type="text" name="seconds" value={seconds} onChange={onSecondsChange}/>
-        <br />
+          <br />
         <label htmlFor="">Minutes: </label>
         <input label="Minutes" type="text" name="minutes" value={minutes} onChange={onMinutesChange}/>
-        <br />
+          <br />
         <label htmlFor="">Hours: </label>
         <input label="Hours" type="text" name="hours" value={hours} onChange={onHoursChange}/>
-        <br />
+          <br />
       </fieldset>
     </form>
   )

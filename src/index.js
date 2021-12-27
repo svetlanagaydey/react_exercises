@@ -9,6 +9,7 @@ import Text from './Components/Text_hide-show_18.1/Text';
 import Todo from './Components/Simple_todo_18.2/Todo';
 import Time from './Components/Time_convert_18.3/Time';
 import Checkboxes from './Components/Controlled_checkboxes/Checkboxes';
+import SimpleFetch from './Components/Simple_fetch_hooks_19.1/SimpleFetch';
 
 
 ReactDOM.render(
@@ -19,8 +20,9 @@ ReactDOM.render(
      <Avatar />
      <Text />
      <Todo />
-     <Time /> */}
-     <Checkboxes />
+     <Time />
+     <Checkboxes /> */}
+     <SimpleFetch />
 
   </React.StrictMode>,
   document.getElementById('root')
