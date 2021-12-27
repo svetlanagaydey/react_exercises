@@ -11,6 +11,7 @@ import Time from './Components/Time_convert_18.3/Time';
 import Checkboxes from './Components/Controlled_checkboxes/Checkboxes';
 import SimpleFetch from './Components/Simple_fetch_hooks_19.1/SimpleFetch';
 import Countries from './Components/Countries_hook_api_19.2/Countries';
+import Algolia from './Components/Algolia_api_19.3/Algolia.jsx';
 
 
 ReactDOM.render(
@@ -23,8 +24,9 @@ ReactDOM.render(
      <Todo />
      <Time />
      <Checkboxes />
-     <SimpleFetch /> */}
-     <Countries />
+     <SimpleFetch />
+     <Countries /> */}
+     <Algolia />
 
   </React.StrictMode>,
   document.getElementById('root')
