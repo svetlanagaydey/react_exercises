@@ -13,6 +13,7 @@ import SimpleFetch from './Components/Simple_fetch_hooks_19.1/SimpleFetch';
 import Countries from './Components/Countries_hook_api_19.2/Countries';
 import Algolia from './Components/Algolia_api_19.3/Algolia.jsx';
 import JokeWithHooks from './Components/ChackNorrisRefactor_19.4/JokeWithHooks';
+import CancelRequest from './Components/CancelRequest_20.1/CancelRequest';
 
 
 ReactDOM.render(
@@ -27,8 +28,9 @@ ReactDOM.render(
      <Checkboxes />
      <SimpleFetch />
      <Countries />
-    <Algolia /> */}
-     < JokeWithHooks />
+    <Algolia />
+     < JokeWithHooks /> */}
+     <CancelRequest />
 
   </React.StrictMode>,
   document.getElementById('root')
