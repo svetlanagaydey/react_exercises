@@ -16,6 +16,7 @@ import JokeWithHooks from './Components/ChackNorrisRefactor_19.4/JokeWithHooks';
 import CancelRequest from './Components/CancelRequest_20.1/CancelRequest';
 import EditingFocus from './Components/EditingFocus_useRef_21.1/EditingFocus';
 import PlayPause from './Components/PlayPauseVideo_21.2/PlayPause';
+import ImageToogle from './Components/ImageToogle_ 21.3/ImageToogle';
 
 
 
@@ -35,8 +36,9 @@ ReactDOM.render(
     <Algolia />
      < JokeWithHooks />
      <CancelRequest />
-     <EditingFocus /> */}
-     <PlayPause />
+     <EditingFocus />
+     <PlayPause /> */}
+     <ImageToogle />
 
   </React.StrictMode>,
   document.getElementById('root')

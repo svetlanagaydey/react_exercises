@@ -15,8 +15,6 @@ import React, { useState, useEffect } from 'react';
                 setCategories(response.data)    ;
                 console.log(response.data);
             })()
-            
-            
         }, []);
         
         const getJokeFromCategory = async (category) => {

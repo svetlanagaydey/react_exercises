@@ -1,0 +1,22 @@
+.first,
+.second,
+.firstHover,
+.secondHover
+ {
+    width: 350px;
+    height: 350px;
+    border: 2px solid gray;
+    border-radius: 10px;
+}
+.first {
+    background-image: url(images/first.jpg);
+}
+.second {
+    background-image: url(images/second.jpg);
+}
+.firstHover {
+    background-image: url(images/first_black-white.jpg);
+}
+.secondHover {
+    background-image: url(images/second_black-white.jpg);
+}
