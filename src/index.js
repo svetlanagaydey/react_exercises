@@ -14,6 +14,8 @@ import Countries from './Components/Countries_hook_api_19.2/Countries';
 import Algolia from './Components/Algolia_api_19.3/Algolia.jsx';
 import JokeWithHooks from './Components/ChackNorrisRefactor_19.4/JokeWithHooks';
 import CancelRequest from './Components/CancelRequest_20.1/CancelRequest';
+import EditingFocus from './Components/EditingFocus_useRef_21.1/EditingFocus';
+
 
 
 ReactDOM.render(
@@ -29,8 +31,9 @@ ReactDOM.render(
      <SimpleFetch />
      <Countries />
     <Algolia />
-     < JokeWithHooks /> */}
-     <CancelRequest />
+     < JokeWithHooks />
+     <CancelRequest /> */}
+     <EditingFocus />
 
   </React.StrictMode>,
   document.getElementById('root')
