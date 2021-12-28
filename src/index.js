@@ -15,6 +15,8 @@ import Algolia from './Components/Algolia_api_19.3/Algolia.jsx';
 import JokeWithHooks from './Components/ChackNorrisRefactor_19.4/JokeWithHooks';
 import CancelRequest from './Components/CancelRequest_20.1/CancelRequest';
 import EditingFocus from './Components/EditingFocus_useRef_21.1/EditingFocus';
+import PlayPause from './Components/PlayPauseVideo_21.2/PlayPause';
+
 
 
 
@@ -32,8 +34,9 @@ ReactDOM.render(
      <Countries />
     <Algolia />
      < JokeWithHooks />
-     <CancelRequest /> */}
-     <EditingFocus />
+     <CancelRequest />
+     <EditingFocus /> */}
+     <PlayPause />
 
   </React.StrictMode>,
   document.getElementById('root')

@@ -29,8 +29,6 @@ const CancelRequest = () => {
 			)    
 		}
 	}
-
-    
 	return(
 		<div>
 			{printButton()}
