@@ -7,7 +7,7 @@ class Avatar extends React.Component {
   
     componentDidMount = async () => {
         const response = await axios.get(
-            "https://randomuser.me/api/?results=5&inc=name,picture");
+            "https://randomuser.me/api/?results=10&inc=name,picture");
         this.setState({users: response.data.results});
         console.log(this.state.users)
     }
@@ -27,7 +27,7 @@ class Avatar extends React.Component {
             <div>
                 <input type="text"/>
                 <button>Filter</button>
-                {this.generateUsersCards}
+                {this.generateUsersCards()}
                 
             </div>
         )

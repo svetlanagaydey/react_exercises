@@ -12,6 +12,7 @@ import Checkboxes from './Components/Controlled_checkboxes/Checkboxes';
 import SimpleFetch from './Components/Simple_fetch_hooks_19.1/SimpleFetch';
 import Countries from './Components/Countries_hook_api_19.2/Countries';
 import Algolia from './Components/Algolia_api_19.3/Algolia.jsx';
+import JokeWithHooks from './Components/ChackNorrisRefactor_19.4/JokeWithHooks';
 
 
 ReactDOM.render(
@@ -25,8 +26,9 @@ ReactDOM.render(
      <Time />
      <Checkboxes />
      <SimpleFetch />
-     <Countries /> */}
-     <Algolia />
+     <Countries />
+    <Algolia /> */}
+     < JokeWithHooks />
 
   </React.StrictMode>,
   document.getElementById('root')

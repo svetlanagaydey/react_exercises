@@ -11,12 +11,13 @@ const Algolia = () => {
             console.log(response.data.hits);
             const temp = [];
             response.data.hits.map(el => {
-                temp.push({name: el.title,
-                            id: el.objectID,
-                            url: el.url})
+                temp.push(
+                    {name: el.title,
+                    id: el.objectID,
+                    url: el.url
+                })
             })
             setSearchList(temp);
-            
         }
         req();
     }, [request] )
@@ -36,9 +37,6 @@ const Algolia = () => {
     const doNewSearch = () => {
         setrequest(onInput);
     }
-    console.log(onInput)
-    console.log(request);
-
     return (
         <div>
             <h1>Algolia</h1>
