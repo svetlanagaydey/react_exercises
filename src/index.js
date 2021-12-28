@@ -34,11 +34,11 @@ ReactDOM.render(
      <SimpleFetch />
      <Countries />
     <Algolia />
-     < JokeWithHooks />
+     < JokeWithHooks /> */}
      <CancelRequest />
-     <EditingFocus />
-     <PlayPause /> */}
-     <ImageToogle />
+     {/* <EditingFocus />
+     <PlayPause />
+     <ImageToogle /> */}
 
   </React.StrictMode>,
   document.getElementById('root')

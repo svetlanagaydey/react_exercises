@@ -1,38 +1,52 @@
-import axios from 'axios';
-import React, { useState, useEffect } from 'react';
-const CancelRequest = () => {
-	const [toogleButton, setToogleButton] = useState(true);
-	const [randomJoke, setRandomJoke] = useState('');
+
+import axios from "axios";
+import React, { useState, useEffect} from "react";
+
+const DataComponent = () => {
+	const [data, setData] = useState("");
+	const [text, setText] = useState("");
 	
 	useEffect(() => {
-		const joke = async() => {
-			const getRandomJoke = await axios.get('https://api.chucknorris.io/jokes/random');
-			setRandomJoke(getRandomJoke.data.value);
+	const source = axios.CancelToken.source();
+	const source2 = axios.CancelToken.source();
+	const getData = async () => {
+		const result = await axios.get(
+		"https://api.chucknorris.io/jokes/random",
+		{
+			cancelToken: source.token
 		}
-		joke();
-	}, [toogleButton])
+		);
+		setData(result.data.value);
+	};
 
-	const printButton = () => {
-        
-		if (toogleButton == true) {
-			return(
-				<div>
-						<button onClick={() => {setToogleButton(false)}}>Display data</button>
-				</div>
-			)         
-		} else {
-			return(
-				<div>
-						<button onClick={() => {setToogleButton(true)}}>Hide data</button>
-						<div>{randomJoke}</div>
-				</div>
-			)    
-		}
-	}
-	return(
-		<div>
-			{printButton()}
-		</div>
-	)
+	// const getData2 = async () => {
+	// 	const result2 = await axios.get(
+	// 	"https://api.chucknorris.io/jokes/random",
+	// 	{
+	// 		cancelToken: source2.token
+	// 	}
+	// 	);
+	// };
+	getData();
+
+	return () => {
+		source.cancel("AAAAA");
+	//	source2.cancel("AAAAA");
+	};
+	}, [text]);
+
+	return <>
+		<div>{data}</div>
+		<input value={text} onChange={(e) => setText(e.target.value)}></input>
+	</>;
+};
+
+export default function CancelRequest() {
+	const [isShown, setIsShown] = useState(false);
+	return (
+	<div className="App">
+		<button onClick={() => setIsShown(!isShown)}>Toggle Component</button>
+		{isShown && <DataComponent />}
+	</div>
+	);
 }
-export default CancelRequest;

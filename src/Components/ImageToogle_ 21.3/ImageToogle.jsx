@@ -24,15 +24,15 @@ return (
     <div>
         <div
           ref={firstRef}
+          className="first"
           onMouseEnter={(e) => changeColor(e.target.className)}
           onMouseLeave={(e) => changeColor(e.target.className)}
-          className="first"
         ></div>
         <div
           ref={secondRef}
+          className="second"
           onMouseEnter={(e) => backColor(e.target.className)}
           onMouseLeave={(e) => backColor(e.target.className)}
-          className="second"
         ></div>
     </div>
   );
