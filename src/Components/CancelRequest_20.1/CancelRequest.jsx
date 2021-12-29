@@ -8,7 +8,7 @@ const DataComponent = () => {
 	
 	useEffect(() => {
 	const source = axios.CancelToken.source();
-	const source2 = axios.CancelToken.source();
+	//const source2 = axios.CancelToken.source();
 	const getData = async () => {
 		const result = await axios.get(
 		"https://api.chucknorris.io/jokes/random",

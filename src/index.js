@@ -18,9 +18,6 @@ import EditingFocus from './Components/EditingFocus_useRef_21.1/EditingFocus';
 import PlayPause from './Components/PlayPauseVideo_21.2/PlayPause';
 import ImageToogle from './Components/ImageToogle_ 21.3/ImageToogle';
 
-
-
-
 ReactDOM.render(
   <React.StrictMode>
      {/* <ChackNorrisJoke />
